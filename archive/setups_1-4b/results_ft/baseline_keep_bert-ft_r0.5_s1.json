@@ -1,0 +1,22 @@
+{
+ "params": 109693954,
+ "gflops": 11.024232192,
+ "latency_ms": 6.327447499970731,
+ "model": "baseline",
+ "gate": "keep",
+ "rate": 0.5,
+ "seed": 1,
+ "epochs_run": 22,
+ "val_acc": 72.89719626168224,
+ "test_acc": 70.11661807580175,
+ "test_waf": 70.39325004399963,
+ "train_seconds": 91.98564553260803,
+ "peak_gpu_mb": 3350.33544921875,
+ "device": "cuda",
+ "lr": 0.0001,
+ "bs": 32,
+ "hidden": 128,
+ "latent": 64,
+ "bert_lr": 2e-05,
+ "text": "bert-ft"
+}

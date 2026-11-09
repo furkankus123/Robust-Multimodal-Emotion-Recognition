@@ -1,0 +1,20 @@
+{
+ "params": 151810,
+ "gflops": 0.000301824,
+ "latency_ms": 0.3724759999931848,
+ "model": "baseline",
+ "gate": "keep",
+ "rate": 0.5,
+ "seed": 2,
+ "epochs_run": 48,
+ "val_acc": 66.82242990654206,
+ "test_acc": 60.64139941690962,
+ "test_waf": 60.663144869768146,
+ "train_seconds": 5.639024496078491,
+ "peak_gpu_mb": 21.55712890625,
+ "device": "cuda",
+ "lr": 0.0001,
+ "bs": 32,
+ "hidden": 128,
+ "latent": 64
+}
