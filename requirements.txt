@@ -1,0 +1,11 @@
+# Packages the code imports, at the versions every run used.
+# Python 3.12.15, Windows 11, NVIDIA RTX 4070 (12 GB), CUDA 12.8, cuDNN 9.19.
+# The full environment is in pip_freeze.txt.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+transformers==5.22.0
+tokenizers==0.23.3
+huggingface_hub==2.4.0
+safetensors==0.8.0
+numpy==2.5.2
+h5py==3.16.0  # make_texts.py only
