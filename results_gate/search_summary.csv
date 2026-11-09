@@ -1,0 +1,5 @@
+config,rate,n,val_acc,test_acc,test_acc_std,test_waf,test_acc_non0,test_acc_non0_std,test_waf_non0,params,gflops,latency_ms,train_s,best_epoch,selected_by_val
+rmm_gate_element_lstm_adam,0.0,3,85.51,79.3,1.52,79.46,80.44,1.39,80.52,110077318,11.026,10.36,130.7,7.3,yes
+rmm_gate_element_lstm_adam,0.5,3,70.4,68.46,1.1,68.6,68.9,1.14,68.95,110077318,11.026,10.92,163.6,13.3,yes
+rmm_shuffle_element_lstm_adam,0.0,3,83.96,80.81,1.27,80.87,81.66,1.04,81.66,110077318,11.026,11.88,121.6,5.3,
+rmm_shuffle_element_lstm_adam,0.5,3,71.34,67.74,2.66,67.93,68.5,2.85,68.57,110077318,11.026,9.91,135.8,9.0,

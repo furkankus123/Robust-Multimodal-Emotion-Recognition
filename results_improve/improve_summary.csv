@@ -1,0 +1,13 @@
+config,rate,n,val_acc,test_acc_non0,test_acc_non0_std,test_waf_non0,test_acc,test_acc_std,latency_ms,train_s,best_epoch
+rmm_none_element_lstm_adam_blr1e-05,0.0,3,84.89,82.01,0.57,82.02,81.2,0.66,10.7,109.32,3.67
+rmm_none_element_lstm_adam_blr1e-05,0.5,3,71.96,68.6,1.09,68.61,67.49,1.61,10.26,138.04,9.0
+rmm_none_element_lstm_adam_blr1e-05_cleanview,0.0,3,85.51,81.96,0.87,82.05,80.81,0.89,10.53,171.49,4.0
+rmm_none_element_lstm_adam_blr1e-05_cleanview,0.5,3,73.05,67.68,0.9,67.64,66.42,0.42,9.53,181.2,5.0
+rmm_none_element_lstm_adam_blr1e-05_cleanview_kl1,0.0,3,85.67,82.72,0.52,82.75,81.83,0.56,9.82,173.24,4.0
+rmm_none_element_lstm_adam_blr1e-05_cleanview_kl1,0.5,3,73.52,69.66,0.76,69.79,68.51,0.83,9.4,188.73,5.67
+rmm_none_element_lstm_adam_blr1e-05_hideunk,0.0,3,84.89,82.01,0.57,82.02,81.2,0.66,10.08,103.05,3.67
+rmm_none_element_lstm_adam_blr1e-05_hideunk,0.5,3,74.3,69.0,0.47,69.08,67.59,0.84,10.35,121.39,7.0
+rmm_none_element_lstm_adam_blr1e-05_hideunk_cleanview_kl1_reg0.5,0.0,3,85.05,81.3,0.5,81.37,80.42,0.42,9.46,323.14,20.33
+rmm_none_element_lstm_adam_blr1e-05_hideunk_cleanview_kl1_reg0.5,0.5,3,73.52,70.07,0.85,69.91,69.73,1.17,9.61,206.75,7.67
+rmm_none_element_lstm_adam_blr1e-05_reg0.5,0.0,3,84.89,82.67,0.61,82.66,81.68,0.81,10.08,126.43,7.67
+rmm_none_element_lstm_adam_blr1e-05_reg0.5,0.5,3,72.43,69.26,0.95,69.42,68.08,1.04,9.86,146.59,11.33
