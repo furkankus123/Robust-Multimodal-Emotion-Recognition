@@ -1,0 +1,652 @@
+W1107 22:24:47.632000 20528 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+W1107 22:24:55.681000 20528 site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  31%|###1      | 62/199 [00:00<00:00, 614.97it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1290.44it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 12.686646499987546, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.0, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 19, "best_epoch": 4, "val_acc": 85.51401869158879, "val_waf": 85.45369711817497, "val_acc_non0": 86.06965174129353, "val_waf_non0": 86.0353656935265, "test_acc": 81.19533527696792, "test_waf": 81.35746159814148, "test_acc_non0": 82.01219512195121, "test_waf_non0": 82.11252618066348, "train_seconds": 113.70946860313416, "peak_gpu_mb": 3476.90478515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  24%|##4       | 48/199 [00:00<00:00, 476.33it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1115.03it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 15.888720500006457, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.0, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 21, "best_epoch": 6, "val_acc": 84.11214953271028, "val_waf": 84.1670809306025, "val_acc_non0": 85.07462686567165, "val_waf_non0": 85.20797076492157, "test_acc": 81.63265306122449, "test_waf": 81.57474946500338, "test_acc_non0": 82.01219512195121, "test_waf_non0": 81.91878253314768, "train_seconds": 151.94058060646057, "peak_gpu_mb": 3482.52978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  15%|#4        | 29/199 [00:00<00:00, 196.11it/s]Loading weights:  41%|####1     | 82/199 [00:00<00:00, 346.95it/s]Loading weights:  60%|######    | 120/199 [00:00<00:00, 340.90it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 506.82it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 11.432021500004339, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.0, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 25, "best_epoch": 10, "val_acc": 82.71028037383178, "val_waf": 82.66954939268378, "val_acc_non0": 84.07960199004975, "val_waf_non0": 84.11511646994329, "test_acc": 78.86297376093295, "test_waf": 78.96209678193274, "test_acc_non0": 79.57317073170732, "test_waf_non0": 79.60961432746001, "train_seconds": 150.62766361236572, "peak_gpu_mb": 3483.52978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  29%|##9       | 58/199 [00:00<00:00, 556.11it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1196.05it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 11.4943889999995, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.1, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 29, "best_epoch": 14, "val_acc": 81.77570093457945, "val_waf": 81.69981250351042, "val_acc_non0": 82.58706467661692, "val_waf_non0": 82.56614277443914, "test_acc": 76.82215743440233, "test_waf": 76.99277971020413, "test_acc_non0": 77.13414634146342, "test_waf_non0": 77.24056928952557, "train_seconds": 171.26688861846924, "peak_gpu_mb": 3486.02978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  23%|##3       | 46/199 [00:00<00:00, 455.40it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1208.45it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 11.121441499999491, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.1, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 32, "best_epoch": 17, "val_acc": 79.90654205607477, "val_waf": 79.966732812558, "val_acc_non0": 81.09452736318407, "val_waf_non0": 81.26342963556732, "test_acc": 78.134110787172, "test_waf": 78.17046417441009, "test_acc_non0": 78.65853658536585, "test_waf_non0": 78.63694560352904, "train_seconds": 207.4629828929901, "peak_gpu_mb": 3483.77978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  23%|##2       | 45/199 [00:00<00:00, 445.01it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1235.85it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 10.914336000005278, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.1, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 20, "best_epoch": 5, "val_acc": 79.90654205607477, "val_waf": 79.92043515736309, "val_acc_non0": 81.09452736318407, "val_waf_non0": 81.20831030035012, "test_acc": 79.59183673469387, "test_waf": 79.67469439541141, "test_acc_non0": 80.48780487804879, "test_waf_non0": 80.50598457554698, "train_seconds": 119.12019157409668, "peak_gpu_mb": 3482.52978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  20%|#9        | 39/199 [00:00<00:00, 386.79it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1120.69it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 11.946299499995803, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.2, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 23, "best_epoch": 8, "val_acc": 80.37383177570094, "val_waf": 80.23172901002587, "val_acc_non0": 80.09950248756219, "val_waf_non0": 79.93840322198531, "test_acc": 71.5743440233236, "test_waf": 71.78728185673477, "test_acc_non0": 72.2560975609756, "test_waf_non0": 72.36192726586191, "train_seconds": 163.4881455898285, "peak_gpu_mb": 3484.77978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  24%|##4       | 48/199 [00:00<00:00, 461.07it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1076.97it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 10.798542000011366, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.2, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 30, "best_epoch": 15, "val_acc": 77.57009345794393, "val_waf": 77.4975112884595, "val_acc_non0": 79.60199004975125, "val_waf_non0": 79.66851046421746, "test_acc": 75.0728862973761, "test_waf": 75.23475454284767, "test_acc_non0": 75.3048780487805, "test_waf_non0": 75.40048440554091, "train_seconds": 179.5944459438324, "peak_gpu_mb": 3483.52978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  27%|##6       | 53/199 [00:00<00:00, 523.35it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1180.39it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 10.977917999989586, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.2, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 37, "best_epoch": 22, "val_acc": 78.97196261682244, "val_waf": 79.07906164968571, "val_acc_non0": 79.60199004975125, "val_waf_non0": 79.83436655863994, "test_acc": 77.69679300291546, "test_waf": 77.69024347612384, "test_acc_non0": 78.20121951219512, "test_waf_non0": 78.13632960435676, "train_seconds": 218.94086289405823, "peak_gpu_mb": 3486.02978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  23%|##3       | 46/199 [00:00<00:00, 455.97it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1128.34it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 11.057769500002905, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.3, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 29, "best_epoch": 14, "val_acc": 76.16822429906543, "val_waf": 76.18470216338413, "val_acc_non0": 76.61691542288557, "val_waf_non0": 76.73744368028675, "test_acc": 72.74052478134111, "test_waf": 72.99186879676934, "test_acc_non0": 73.01829268292683, "test_waf_non0": 73.17289094762852, "train_seconds": 179.33866906166077, "peak_gpu_mb": 3484.52978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  32%|###2      | 64/199 [00:00<00:00, 618.83it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1205.82it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 13.827352000007522, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.3, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 22, "best_epoch": 7, "val_acc": 78.97196261682244, "val_waf": 78.98650190886833, "val_acc_non0": 79.60199004975125, "val_waf_non0": 79.7071317211012, "test_acc": 74.63556851311954, "test_waf": 74.7877462673381, "test_acc_non0": 74.84756097560977, "test_waf_non0": 74.93346106894282, "train_seconds": 132.4673306941986, "peak_gpu_mb": 3485.52978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  28%|##8       | 56/199 [00:00<00:00, 535.85it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1181.30it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 10.940257500005828, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.3, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 20, "best_epoch": 5, "val_acc": 75.70093457943925, "val_waf": 75.70093457943925, "val_acc_non0": 75.62189054726367, "val_waf_non0": 75.83360584734204, "test_acc": 75.0728862973761, "test_waf": 74.4258143364559, "test_acc_non0": 75.15243902439023, "test_waf_non0": 74.45217411759705, "train_seconds": 122.57555651664734, "peak_gpu_mb": 3486.02978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  26%|##5       | 51/199 [00:00<00:00, 503.54it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1199.28it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 12.351647499999672, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.4, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 21, "best_epoch": 6, "val_acc": 74.29906542056075, "val_waf": 74.43819643599286, "val_acc_non0": 75.12437810945273, "val_waf_non0": 75.43812469185603, "test_acc": 66.47230320699708, "test_waf": 66.63626284654964, "test_acc_non0": 66.61585365853658, "test_waf_non0": 66.68211733393518, "train_seconds": 145.95761275291443, "peak_gpu_mb": 3483.77978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  20%|#9        | 39/199 [00:00<00:00, 341.28it/s]Loading weights:  56%|#####5    | 111/199 [00:00<00:00, 547.58it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 749.69it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 11.21484249999412, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.4, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 37, "best_epoch": 22, "val_acc": 73.83177570093457, "val_waf": 73.79191371051486, "val_acc_non0": 75.62189054726367, "val_waf_non0": 75.74754766668192, "test_acc": 70.69970845481049, "test_waf": 70.96675288597062, "test_acc_non0": 71.4939024390244, "test_waf_non0": 71.66101740216446, "train_seconds": 232.2977614402771, "peak_gpu_mb": 3485.52978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  27%|##6       | 53/199 [00:00<00:00, 521.73it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1153.81it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 11.050986499994906, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.4, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 22, "best_epoch": 7, "val_acc": 73.36448598130842, "val_waf": 72.93366859577654, "val_acc_non0": 74.6268656716418, "val_waf_non0": 74.29789826378313, "test_acc": 70.8454810495627, "test_waf": 71.03541843031181, "test_acc_non0": 72.86585365853658, "test_waf_non0": 72.97695258924057, "train_seconds": 130.8510410785675, "peak_gpu_mb": 3486.02978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  31%|###       | 61/199 [00:00<00:00, 587.76it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1206.76it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 11.074244000010367, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.5, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 29, "best_epoch": 14, "val_acc": 72.89719626168224, "val_waf": 72.14630701632026, "val_acc_non0": 74.6268656716418, "val_waf_non0": 74.00634392235447, "test_acc": 65.3061224489796, "test_waf": 65.20141315044687, "test_acc_non0": 66.61585365853658, "test_waf_non0": 66.41526688734827, "train_seconds": 191.77005791664124, "peak_gpu_mb": 3486.27978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  27%|##7       | 54/199 [00:00<00:00, 519.87it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1213.51it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 12.475875500003895, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.5, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 24, "best_epoch": 9, "val_acc": 69.1588785046729, "val_waf": 67.79149468551509, "val_acc_non0": 72.13930348258707, "val_waf_non0": 71.13811746222449, "test_acc": 65.88921282798835, "test_waf": 66.05171562100509, "test_acc_non0": 66.92073170731707, "test_waf_non0": 66.97185505850972, "train_seconds": 142.08020067214966, "peak_gpu_mb": 3483.77978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  33%|###2      | 65/199 [00:00<00:00, 646.50it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1123.36it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 112674946, "gflops": 11.02474496, "latency_ms": 14.122339000005013, "model": "paper", "gate": "keep", "unc": "none", "rate": 0.5, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 25, "best_epoch": 10, "val_acc": 71.96261682242991, "val_waf": 71.9199075469802, "val_acc_non0": 73.13432835820896, "val_waf_non0": 73.24811890958432, "test_acc": 70.40816326530613, "test_waf": 70.66770215516546, "test_acc_non0": 71.4939024390244, "test_waf_non0": 71.6464216991932, "train_seconds": 191.15752530097961, "peak_gpu_mb": 3483.77978515625, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "paper_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  18%|#7        | 35/199 [00:00<00:00, 332.42it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1177.22it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 11.546226000009483, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.1, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 24, "best_epoch": 9, "val_acc": 84.11214953271028, "val_waf": 84.06073716265881, "val_acc_non0": 84.5771144278607, "val_waf_non0": 84.55858360021755, "test_acc": 77.98833819241983, "test_waf": 78.11657859328334, "test_acc_non0": 78.65853658536585, "test_waf_non0": 78.72075423957331, "train_seconds": 157.53643083572388, "peak_gpu_mb": 3435.74365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  30%|###       | 60/199 [00:00<00:00, 586.05it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1078.28it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 10.452968000008696, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.1, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 22, "best_epoch": 7, "val_acc": 80.37383177570094, "val_waf": 79.96585987525125, "val_acc_non0": 82.58706467661692, "val_waf_non0": 82.29922439326245, "test_acc": 72.44897959183673, "test_waf": 72.64068958481548, "test_acc_non0": 73.47560975609755, "test_waf_non0": 73.56887431161876, "train_seconds": 146.07317447662354, "peak_gpu_mb": 3436.49365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  28%|##7       | 55/199 [00:00<00:00, 544.55it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1126.90it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 9.661006999995152, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.1, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 19, "best_epoch": 4, "val_acc": 81.77570093457945, "val_waf": 81.78830165435257, "val_acc_non0": 82.58706467661692, "val_waf_non0": 82.67681976191567, "test_acc": 79.73760932944607, "test_waf": 79.88126807209888, "test_acc_non0": 80.64024390243902, "test_waf_non0": 80.71795246269376, "train_seconds": 114.65041184425354, "peak_gpu_mb": 3436.49365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  18%|#8        | 36/199 [00:00<00:00, 356.03it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1138.92it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 13.191961499996978, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.2, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 21, "best_epoch": 6, "val_acc": 81.30841121495327, "val_waf": 81.24792607371626, "val_acc_non0": 82.08955223880598, "val_waf_non0": 82.08955223880598, "test_acc": 75.94752186588921, "test_waf": 76.17197069959424, "test_acc_non0": 76.82926829268293, "test_waf_non0": 76.97014620275286, "train_seconds": 127.11683940887451, "peak_gpu_mb": 3434.24365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  21%|##1       | 42/199 [00:00<00:00, 414.63it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1089.79it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 987.93it/s] 
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 9.347001999994973, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.2, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 28, "best_epoch": 13, "val_acc": 78.97196261682244, "val_waf": 78.95644099305783, "val_acc_non0": 80.59701492537313, "val_waf_non0": 80.69702773470603, "test_acc": 75.94752186588921, "test_waf": 76.06986396731436, "test_acc_non0": 75.91463414634147, "test_waf_non0": 75.9848512132327, "train_seconds": 185.71951246261597, "peak_gpu_mb": 3437.74365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  25%|##5       | 50/199 [00:00<00:00, 495.61it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1191.23it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 9.387736999997287, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.2, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 20, "best_epoch": 5, "val_acc": 77.10280373831776, "val_waf": 77.08590241466295, "val_acc_non0": 78.1094527363184, "val_waf_non0": 78.20217096336499, "test_acc": 77.40524781341108, "test_waf": 77.57731354963771, "test_acc_non0": 78.5060975609756, "test_waf_non0": 78.59818641071851, "train_seconds": 126.34209537506104, "peak_gpu_mb": 3434.99365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  27%|##7       | 54/199 [00:00<00:00, 517.22it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1175.32it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 9.43781649999437, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.3, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 21, "best_epoch": 6, "val_acc": 76.63551401869158, "val_waf": 76.29103762281333, "val_acc_non0": 78.1094527363184, "val_waf_non0": 77.862549351561, "test_acc": 70.55393586005832, "test_waf": 70.80258816055695, "test_acc_non0": 71.95121951219512, "test_waf_non0": 72.10231877238384, "train_seconds": 137.30294013023376, "peak_gpu_mb": 3434.24365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  26%|##5       | 51/199 [00:00<00:00, 495.02it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 992.02it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 10.607060000002093, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.3, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 28, "best_epoch": 13, "val_acc": 77.10280373831776, "val_waf": 77.00745673517977, "val_acc_non0": 79.60199004975125, "val_waf_non0": 79.66851046421746, "test_acc": 72.01166180758017, "test_waf": 72.26544832002006, "test_acc_non0": 72.5609756097561, "test_waf_non0": 72.72301101680732, "train_seconds": 173.9822986125946, "peak_gpu_mb": 3434.24365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  30%|###       | 60/199 [00:00<00:00, 594.26it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1124.80it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 11.866850000005797, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.3, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 22, "best_epoch": 7, "val_acc": 76.16822429906543, "val_waf": 76.18470216338413, "val_acc_non0": 76.61691542288557, "val_waf_non0": 76.73744368028675, "test_acc": 74.48979591836735, "test_waf": 74.63841889950054, "test_acc_non0": 75.15243902439023, "test_waf_non0": 75.22049680654472, "train_seconds": 138.50803399085999, "peak_gpu_mb": 3434.24365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  25%|##5       | 50/199 [00:00<00:00, 495.35it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1189.71it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 9.143209000012575, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.4, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 26, "best_epoch": 11, "val_acc": 75.23364485981308, "val_waf": 75.1305144278475, "val_acc_non0": 76.61691542288557, "val_waf_non0": 76.64366326433606, "test_acc": 69.67930029154519, "test_waf": 69.90258675690299, "test_acc_non0": 70.42682926829268, "test_waf_non0": 70.53963675591875, "train_seconds": 174.58005905151367, "peak_gpu_mb": 3434.74365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  29%|##8       | 57/199 [00:00<00:00, 562.11it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1205.97it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 24.342722999990656, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.4, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 27, "best_epoch": 12, "val_acc": 71.02803738317756, "val_waf": 71.16870280901843, "val_acc_non0": 72.13930348258707, "val_waf_non0": 72.46608212728069, "test_acc": 72.15743440233237, "test_waf": 72.37604170018848, "test_acc_non0": 72.86585365853658, "test_waf_non0": 72.99214222357034, "train_seconds": 164.23577523231506, "peak_gpu_mb": 3434.24365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  31%|###       | 61/199 [00:00<00:00, 601.95it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1128.41it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 110077318, "gflops": 11.02486784, "latency_ms": 10.824256500000047, "model": "rmm", "gate": "keep", "unc": "none", "rate": 0.4, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 21, "best_epoch": 6, "val_acc": 75.23364485981308, "val_waf": 74.67805745083426, "val_acc_non0": 76.11940298507463, "val_waf_non0": 75.58512960657168, "test_acc": 68.22157434402332, "test_waf": 68.34697460344734, "test_acc_non0": 69.66463414634147, "test_waf_non0": 69.69882488847686, "train_seconds": 127.85070896148682, "peak_gpu_mb": 3434.24365234375, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "rmm_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  27%|##7       | 54/199 [00:00<00:00, 516.93it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1157.84it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 7.663576499999181, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.1, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 21, "best_epoch": 6, "val_acc": 81.77570093457945, "val_waf": 81.4809311444787, "val_acc_non0": 82.58706467661692, "val_waf_non0": 82.29922439326245, "test_acc": 75.65597667638484, "test_waf": 75.87866067715613, "test_acc_non0": 76.21951219512195, "test_waf_non0": 76.35435767216853, "train_seconds": 97.27600932121277, "peak_gpu_mb": 3371.90185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  34%|###4      | 68/199 [00:00<00:00, 678.89it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1163.60it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 7.679230000012467, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.1, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 17, "best_epoch": 2, "val_acc": 79.90654205607477, "val_waf": 79.78264563555095, "val_acc_non0": 81.59203980099502, "val_waf_non0": 81.56992236154996, "test_acc": 75.0728862973761, "test_waf": 75.30549690685221, "test_acc_non0": 76.0670731707317, "test_waf_non0": 76.21245302036836, "train_seconds": 73.2784116268158, "peak_gpu_mb": 3370.65185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  20%|##        | 40/199 [00:00<00:00, 396.66it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1210.38it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 7.528686000005109, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.1, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 20, "best_epoch": 5, "val_acc": 80.8411214953271, "val_waf": 80.7959871648658, "val_acc_non0": 82.08955223880598, "val_waf_non0": 82.12950602868622, "test_acc": 78.2798833819242, "test_waf": 78.4504199650685, "test_acc_non0": 79.42073170731707, "test_waf_non0": 79.51407392708117, "train_seconds": 84.11424851417542, "peak_gpu_mb": 3370.15185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  31%|###       | 61/199 [00:00<00:00, 599.86it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1212.91it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 7.9191904999970575, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.2, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 17, "best_epoch": 2, "val_acc": 80.8411214953271, "val_waf": 80.93870061415808, "val_acc_non0": 81.09452736318407, "val_waf_non0": 81.3025642578184, "test_acc": 76.53061224489795, "test_waf": 76.46453356311184, "test_acc_non0": 77.28658536585365, "test_waf_non0": 77.14528536368606, "train_seconds": 71.6639130115509, "peak_gpu_mb": 3370.65185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  23%|##2       | 45/199 [00:00<00:00, 434.74it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1211.49it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 6.697081000002072, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.2, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 23, "best_epoch": 8, "val_acc": 79.43925233644859, "val_waf": 79.43925233644859, "val_acc_non0": 81.09452736318407, "val_waf_non0": 81.20831030035012, "test_acc": 76.82215743440233, "test_waf": 76.93085095398145, "test_acc_non0": 77.13414634146342, "test_waf_non0": 77.18401119470292, "train_seconds": 96.89782977104187, "peak_gpu_mb": 3372.40185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  62%|######1   | 123/199 [00:00<00:00, 1140.81it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1256.53it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 6.619940000000497, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.2, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 17, "best_epoch": 2, "val_acc": 78.03738317757009, "val_waf": 77.38781430425934, "val_acc_non0": 80.09950248756219, "val_waf_non0": 79.56997998014289, "test_acc": 73.03206997084548, "test_waf": 73.10836374813185, "test_acc_non0": 75.0, "test_waf_non0": 75.01161893607727, "train_seconds": 71.24573302268982, "peak_gpu_mb": 3370.65185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  59%|#####8    | 117/199 [00:00<00:00, 1132.06it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1274.03it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 6.6893679999884625, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.3, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 20, "best_epoch": 5, "val_acc": 78.03738317757009, "val_waf": 78.14924216744951, "val_acc_non0": 78.1094527363184, "val_waf_non0": 78.35033756168448, "test_acc": 73.46938775510205, "test_waf": 73.61922988190683, "test_acc_non0": 74.08536585365853, "test_waf_non0": 74.15165059697281, "train_seconds": 83.88567566871643, "peak_gpu_mb": 3372.90185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  68%|######7   | 135/199 [00:00<00:00, 1303.04it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1343.69it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 7.337179000005563, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.3, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 20, "best_epoch": 5, "val_acc": 77.10280373831776, "val_waf": 77.14711596331534, "val_acc_non0": 78.60696517412936, "val_waf_non0": 78.78421471468893, "test_acc": 73.61516034985422, "test_waf": 73.75936054606085, "test_acc_non0": 73.9329268292683, "test_waf_non0": 74.0043248706696, "train_seconds": 84.17140579223633, "peak_gpu_mb": 3373.65185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  24%|##3       | 47/199 [00:00<00:00, 466.55it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1181.12it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 7.5430265000068175, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.3, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 17, "best_epoch": 2, "val_acc": 76.16822429906543, "val_waf": 76.15063312546553, "val_acc_non0": 76.61691542288557, "val_waf_non0": 76.69317053215174, "test_acc": 73.76093294460642, "test_waf": 73.98916765653495, "test_acc_non0": 75.15243902439023, "test_waf_non0": 75.28103089992914, "train_seconds": 71.57850003242493, "peak_gpu_mb": 3370.65185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  23%|##3       | 46/199 [00:00<00:00, 457.12it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1229.79it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 7.4426094999944326, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.4, "seed": 0, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 21, "best_epoch": 6, "val_acc": 76.16822429906543, "val_waf": 76.2396133358246, "val_acc_non0": 77.11442786069652, "val_waf_non0": 77.31888850621307, "test_acc": 69.533527696793, "test_waf": 69.7933845178647, "test_acc_non0": 70.73170731707317, "test_waf_non0": 70.88937611031359, "train_seconds": 88.400386095047, "peak_gpu_mb": 3371.40185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  22%|##1       | 43/199 [00:00<00:00, 425.82it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1209.58it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 7.392614999989746, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.4, "seed": 1, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 24, "best_epoch": 9, "val_acc": 73.83177570093457, "val_waf": 73.79191371051486, "val_acc_non0": 75.62189054726367, "val_waf_non0": 75.74754766668192, "test_acc": 70.26239067055393, "test_waf": 70.49242952304176, "test_acc_non0": 70.57926829268293, "test_waf_non0": 70.7195448141465, "train_seconds": 101.4099190235138, "peak_gpu_mb": 3371.90185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  34%|###4      | 68/199 [00:00<00:00, 667.94it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1177.74it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"params": 109758082, "gflops": 11.024237056, "latency_ms": 7.582243500000914, "model": "baseline", "gate": "keep", "unc": "none", "rate": 0.4, "seed": 2, "mask": "element", "av_enc": "lstm", "opt": "adam", "epochs_run": 19, "best_epoch": 4, "val_acc": 74.29906542056075, "val_waf": 74.2385193675029, "val_acc_non0": 74.6268656716418, "val_waf_non0": 74.65588992513062, "test_acc": 71.5743440233236, "test_waf": 71.75893061903682, "test_acc_non0": 72.2560975609756, "test_waf_non0": 72.34636003261721, "train_seconds": 79.54631447792053, "peak_gpu_mb": 3374.65185546875, "device": "cuda", "lr": 0.0001, "bert_lr": 1e-05, "bs": 32, "hidden": 128, "latent": 64, "lstm_hidden": 64, "patience": 15, "hide_unk": false, "clean_view": false, "consist": 0.0, "aux_reg": 0.0, "text": "bert-ft", "config": "baseline_none_element_lstm_adam_blr1e-05"}
+model,rate,n,val_acc,test_acc_non0,test_acc_non0_std,test_waf_non0,drop_from_r0,published_rmm_tcvae_acc,test_acc,test_acc_std,params,gflops,latency_ms,train_s,best_epoch,peak_gpu_mb
+paper,0.0,3,84.11,81.2,1.15,81.21,0.0,84.7,80.56,1.22,112674946,11.0247,13.34,138.76,6.67,3480.99
+paper,0.1,3,80.53,78.76,1.37,78.79,-2.44,83.2,78.18,1.13,112674946,11.0247,11.18,165.95,12.0,3484.11
+paper,0.2,3,78.97,75.25,2.43,75.3,-5.95,82.7,74.78,2.51,112674946,11.0247,11.24,187.34,15.0,3484.78
+paper,0.3,3,76.95,74.34,0.94,74.19,-6.86,80.6,74.15,1.01,112674946,11.0247,11.94,144.79,8.67,3485.36
+paper,0.4,3,73.83,70.33,2.68,70.44,-10.87,80.1,69.34,2.03,112674946,11.0247,11.54,169.7,11.67,3485.11
+paper,0.5,3,71.34,68.34,2.23,68.34,-12.86,78.1,67.2,2.28,112674946,11.0247,12.56,175.0,11.0,3484.61
+rmm,0.0,3,84.89,82.01,0.57,82.02,-0.0,84.7,81.2,0.66,110077318,11.0249,10.7,109.32,3.67,3432.58
+rmm,0.1,3,82.09,77.59,3.02,77.67,-4.42,83.2,76.72,3.11,110077318,11.0249,10.55,139.42,6.67,3436.24
+rmm,0.2,3,79.13,77.08,1.07,77.18,-4.93,82.7,76.43,0.69,110077318,11.0249,10.64,146.39,8.0,3435.66
+rmm,0.3,3,76.64,73.22,1.39,73.35,-8.79,80.6,72.35,1.62,110077318,11.0249,10.64,149.93,8.67,3434.24
+rmm,0.4,3,73.83,70.99,1.37,71.08,-11.02,80.1,70.02,1.62,110077318,11.0249,14.77,155.56,9.67,3434.41
+rmm,0.5,3,71.96,68.6,1.09,68.61,-13.41,78.1,67.49,1.61,110077318,11.0249,10.26,138.04,9.0,3435.74
+baseline,0.0,3,84.27,81.0,0.93,80.99,0.0,84.7,80.17,1.04,109758082,11.0242,7.98,81.62,3.67,3371.94
+baseline,0.1,3,80.84,77.24,1.55,77.36,-3.76,83.2,76.34,1.39,109758082,11.0242,7.62,84.89,4.33,3370.9
+baseline,0.2,3,79.44,76.47,1.04,76.45,-4.53,82.7,75.46,1.72,109758082,11.0242,7.08,79.94,4.0,3371.24
+baseline,0.3,3,77.1,74.39,0.54,74.48,-6.61,80.6,73.62,0.12,109758082,11.0242,7.19,79.88,4.0,3372.4
+baseline,0.4,3,74.77,71.19,0.76,71.32,-9.81,80.1,70.46,0.84,109758082,11.0242,7.47,89.79,6.33,3372.65
+baseline,0.5,3,72.59,68.75,0.69,68.86,-12.25,78.1,67.44,0.9,109758082,11.0242,8.32,93.87,6.67,3375.9
+
