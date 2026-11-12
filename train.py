@@ -101,6 +101,8 @@ def run(a):
                                                        F.softmax(out_c[0][:, :2].detach(), 1), reduction="batchmean")
             opt.zero_grad(); loss.backward(); opt.step(); sched.step()
         v = evaluate(model, dl_va, dev)
+        # early stopping and checkpoint selection use validation accuracy on ALL segments (score 0 counted as
+        # negative); test accuracy is reported both on all segments and with score-0 segments excluded
         if v[0] > best:
             best, bad, best_ep, best_v = v[0], 0, ep + 1, v
             best_state = {k: t.detach().clone() for k, t in model.state_dict().items()}

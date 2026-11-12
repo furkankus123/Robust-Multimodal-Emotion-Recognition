@@ -17,7 +17,8 @@ CONFIGS = {                     # name: (av_enc, opt, bert_lr or None = optimise
     "mean-adam": ("mean", "adam", None, 1e-4),
     "lstm-paper": ("lstm", "paper", None, 1e-4),
     "lstm-adam": ("lstm", "adam", None, 1e-4),            # BERT 2e-5, others 1e-4
-    # lower learning rates, added on 30 Oct 2026 before any of them was run:
+    # lower learning rates, added on 30 Oct 2026 after the four configurations above had been run (their validation
+    # and test results were already in search_summary.csv) and before either of these two was run:
     "lstm-adam-blr1e-5": ("lstm", "adam", 1e-5, 1e-4),
     "lstm-adam-blr1e-5-lr5e-5": ("lstm", "adam", 1e-5, 5e-5),
 }

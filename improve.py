@@ -1,4 +1,4 @@
-"""Robustness experiment at r = 0.5 on the selected configuration (LSTM, Adam, BERT 1e-5).
+"""Robustness experiment at r = 0.0 and r = 0.5 on the selected configuration (LSTM, Adam, BERT 1e-5).
 
 Arms (all defined on 30 Oct 2026 before any of them was run):
   base        the selected RMM-TCVAE (copied from results_search; runs are deterministic)
@@ -7,6 +7,9 @@ Arms (all defined on 30 Oct 2026 before any of them was run):
   consist     cleanview + KL(clean prediction || masked prediction), weight 1
   auxreg      auxiliary L1 regression on the sentiment score, weight 0.5
 Each arm: rates 0.0 and 0.5 x seeds 0,1,2. Test is evaluated once per run; nothing is chosen on test.
+No validation rule was defined in advance for choosing among the five single arms; the only selection rule is
+the one for "combo" below. (By validation accuracy at r = 0.5, hideunk is highest; averaged over both rates,
+consist and hideunk tie.)
 Writes <out>/improve_summary.csv. Re-running skips finished runs.
 """
 import argparse, csv, glob, json, os, shutil, itertools, numpy as np
@@ -19,7 +22,8 @@ ARMS = {
     "cleanview": ["--clean-view"],
     "consist": ["--clean-view", "--consist", "1.0"],
     "auxreg": ["--aux-reg", "0.5"],
-    # added 30 Oct 2026 after the five arms above: their combination, reported only if validation favours it
+    # added 30 Oct 2026 after the five arms above: their combination. Always reported; it replaces "consist" as
+    # the main result only if its validation accuracy is higher.
     "combo": ["--hide-unk", "--clean-view", "--consist", "1.0", "--aux-reg", "0.5"],
 }
 p = argparse.ArgumentParser()

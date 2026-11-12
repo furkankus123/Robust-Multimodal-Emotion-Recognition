@@ -67,7 +67,8 @@ The release has 2,183 segments (splits 1,283 / 214 / 686); the paper uses 2,199 
 
 Every script writes one JSON per run (metrics, resources, all settings) plus a summary CSV, and skips runs whose
 JSON already exists. Delete or move a results folder to re-run it. One run takes about 1.5 to 4 minutes on an RTX 4070.
-Validation accuracy is the only selection criterion; the test set is evaluated once per run.
+Validation accuracy is the only selection criterion (computed on all validation segments, score 0 counted as
+negative; reported test accuracy excludes score-0 segments, as in the paper); the test set is evaluated once per run.
 
 | Report section | Command | Output |
 |---|---|---|
@@ -92,8 +93,16 @@ instead of training them again.
 
 ## Earlier setups (archive)
 
-Report sections 7.2 to 7.4 also use runs made with earlier versions of the code. They are kept unchanged, with the code
-that produced them, in `archive/`. These scripts expect the data one folder up (`../mosi_raw.pkl`) or a `--data` argument.
+Report sections 7.2 to 7.4 also use runs made with earlier versions of the code. The result files are kept unchanged in
+`archive/`. These scripts expect the data one folder up (`../mosi_raw.pkl`) or a `--data` argument.
+
+- `archive/setups_1-4b/` holds the code for setups 4a and 4b. Setups 1 to 3 were run with an earlier version of the
+  code that is not in this repository: it had a constant-rate Adam option (used for setup 3, BERT learning rate 2e-5)
+  and did not record `best_epoch`. The archived code uses AdamW with warm-up and cosine annealing only, so it cannot
+  re-create setups 1 to 3 exactly.
+- Setup 4a used `--patience 10 --warmup 400`; setup 4b used the defaults (`--patience 15 --warmup 100`). These settings
+  are not stored in the result files; for 4a they can be checked from `epochs_run - best_epoch = 10`.
+- `archive/setup_5_gate/` holds the code that produced `results_unc` (setup 5).
 
 | Folder | Report setup |
 |---|---|

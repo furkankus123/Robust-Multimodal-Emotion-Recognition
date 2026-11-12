@@ -1,4 +1,5 @@
-"""RMM-TCVAE re-implementation from the paper text + source/RMMTCVAE_Pseudocode.md.
+"""RMM-TCVAE re-implementation from the paper text + the pseudocode file in the authors' repository
+(github.com/WANGShuaiShine/RMM-TCVAE, commit d578635; the pseudocode file is not copied into this repository).
 The authors' model files are not in their repo, so this is NOT their code."""
 import torch
 import torch.nn as nn
